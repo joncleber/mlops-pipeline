@@ -1,0 +1,43 @@
+# mlops-pipeline
+
+Autor: Cleber Batista dos Santos
+
+Projeto gerado como parte do exercício de modularização do curso de MLOps.
+
+## Estrutura
+
+```
+mlops-pipeline/
+├── data/
+│   └── raw/
+│       └── points.csv       # gerado pelo generate_data.py
+├── src/
+│   ├── data.py              # carregamento e preparação dos dados
+│   ├── train.py             # treinamento do modelo
+│   ├── evaluate.py          # avaliação do modelo
+│   └── predict.py           # predição
+├── outputs/
+│   └── metrics.json         # gerado pelo main.py
+├── generate_data.py
+├── main.py
+└── requirements.txt
+```
+
+## Como executar
+
+1. Instalar dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Gerar os dados:
+   ```bash
+   python generate_data.py
+   ```
+
+3. Implementar os módulos em `src/` (ver enunciado do exercício)
+
+4. Executar o pipeline:
+   ```bash
+   python main.py
+   ```# mlops-pipeline
