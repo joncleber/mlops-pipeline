@@ -40,4 +40,4 @@ mlops-pipeline/
 4. Executar o pipeline:
    ```bash
    python main.py
-   ```# mlops-pipeline
+   ```
